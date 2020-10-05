@@ -1,0 +1,93 @@
+.header {
+  width: 100vw;
+  height: 50px;
+  background-color: #1985A1;
+  display: flex;
+  align-items: center;
+}
+
+.logo { 
+  width: 60vw;
+  color: #F5F5F5;
+  font-size: 26px;
+  margin-left: 10px;
+}
+
+.right-part {
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-page, .resume, .list, .bookmark {
+  font-size: 20px;
+  color: #F5F5F5;
+}
+
+.body {
+  height: calc(100vh - 100px);
+  background-color: #F5F5F5;
+  overflow: scroll;
+  justify-content: center;
+  display: flex;
+}
+
+.contents {
+  width: 70%;
+  height: 100%; 
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.search {
+  height: 50px;
+  width: 80%;
+  background-color: #EBEAEB;
+  border: 1px solid #677D8E;
+  margin: 10px 0px 10px 0px;
+  border-radius:4px;
+}
+
+.vacancies {
+  height: calc(100% - 70px);
+  width: 80%;
+}
+
+.vacancie {
+  height: 230px;
+  width: 100%;
+  background-color: #EBEAEB;
+  border: 1px solid #677D8E;
+  margin: 10px 0px 10px 0px;
+  border-radius:4px;
+}
+
+.position {
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 0.5px solid #11586a;
+  color: #11586a;
+}
+
+.details {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.position-btn {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  width: 150px;
+  border: 0.5px solid #ACBAC3;
+  border-radius:4px;
+  background-color: #ACBAC3;
+  color: #F5F5F5;
+}
+.footer {
+  height: 50px;
+  background-color: #1985A1;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
