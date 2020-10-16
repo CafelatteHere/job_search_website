@@ -11,17 +11,20 @@
   color: #F5F5F5;
   font-size: 26px;
   margin-left: 10px;
+  text-decoration: none;
 }
 
 .right-part {
   width: 40vw;
   display: flex;
   justify-content: space-around;
+  
 }
 
-.my-page, .resume, .list, .bookmark {
+.right-part-menu {
   font-size: 20px;
   color: #F5F5F5;
+  text-decoration: none;;
 }
 
 .body {
@@ -40,9 +43,15 @@
   display: flex;
 }
 
-.search {
-  height: 50px;
+.search-form {
+  display: flex;
+  padding: 10px;
   width: 80%;
+  align-items: center;
+}
+.search-input {
+  width: calc(80% - 140px);
+  height: 45px;
   background-color: #EBEAEB;
   border: 1px solid #677D8E;
   margin: 10px 0px 10px 0px;
@@ -54,12 +63,22 @@
   width: 80%;
 }
 
-.vacancie {
-  height: 230px;
+.vacancy {
+  height: 260px;
   width: 100%;
   background-color: #EBEAEB;
   border: 1px solid #677D8E;
   margin: 10px 0px 10px 0px;
+  border-radius:4px;
+}
+
+.vacancy-show {
+  height: 500px;
+  width: 80%;
+  background-color: #EBEAEB;
+  border: 1px solid #677D8E;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
   border-radius:4px;
 }
 
@@ -70,24 +89,97 @@
   color: #11586a;
 }
 
+.about-position {
+  height: 185px;
+  text-overflow: clip;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+.about-position-show {
+  height: 430px;
+  text-overflow: clip;
+  overflow: scroll;
+  padding-bottom: 5px;
+}
+
 .details {
-  padding: 10px;
+  padding: 5px;
   font-size: 16px;
 }
 
-.position-btn {
-  padding: 10px;
-  margin: 0 10px 0 10px;
+.position-btns {
+  padding-top: 5px;
+  display: flex;
+}
+
+.position-btn, .search-btn {
+  margin: 5px; 
+  width: 130px;
+  height: 45px;
+  border: 0.5px solid #ACBAC3;
+  border-radius:4px;
+  background-color: #ACBAC3;
+  color: #F5F5F5;
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.footer {
+  height: 50px;
+  background-color: #1985A1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.devise {
+  padding: 100px 0px 0px 100px
+}
+
+.devise-header {
+  width: 40%;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1985A1;
+  border-bottom: 1px solid #1985A1;
+  padding-bottom: 10px;
+}
+.field {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.actions {
+  color: #1985A1;
+  padding-top: 15px;
+}
+
+.form {
+  width: 80%;
+}
+
+.form-detail{
+  display: flex;
+  width: 80%;
+  padding-bottom:  10px;
+}
+
+.form-description {
+  display: flex;
+  width: 80%;
+  padding: 10px 0 5px 0;
+}
+
+.submit-btn {
+  padding: 10px 0 10px 0;
+  margin: 5px;
   width: 150px;
   border: 0.5px solid #ACBAC3;
   border-radius:4px;
   background-color: #ACBAC3;
   color: #F5F5F5;
-}
-.footer {
-  height: 50px;
-  background-color: #1985A1;
-  text-align: center;
-  align-items: center;
-  display: flex;
+  font-size: 16px;
 }

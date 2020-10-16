@@ -1,0 +1,19 @@
+<div class="vacancy">
+  <div class="about-position">
+  <h2 class="position"><%= vacancy.position %></h2>
+  <p class="details">会社：<%= vacancy.company %></p>
+  <p class="details">勤務地：<%= vacancy.location %></p>
+  <p class="details">年収：<%= vacancy.salary %>万円</p>
+  <p class="details">仕事内容：<%= vacancy.description %></p>
+  </div>
+  <div class="position-btns">
+    <% if user_signed_in? && current_user.is_recruiter == true %>
+      <%= link_to '編集', edit_vacancy_path(vacancy.id), method: :get, class: "position-btn" %>
+      <%= link_to '消去', vacancy_path(vacancy.id), method: :delete, class: "position-btn" %>
+    <% elsif user_signed_in? && current_user.is_recruiter == false %>
+      <%= link_to '応募', edit_vacancy_path(vacancy.id), method: :get, class: "position-btn" %>
+      <%= link_to 'ブックマーク', edit_vacancy_path(vacancy.id), method: :get, class: "position-btn" %>
+    <% end %>
+      <%= link_to '詳細', vacancy_path(vacancy.id), method: :get, class: "position-btn" %>
+  </div>
+</div>

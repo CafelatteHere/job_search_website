@@ -1,0 +1,22 @@
+  <p class="form-description">役職名：</p>
+  <%= form.text_field :position, placeholder: "Position", class: "form-detail" %>
+  <p class="form-description">会社：</p>
+  <%= form.text_field :company, placeholder: "Company name", class: "form-detail" %>
+  <p class="form-description">勤務地：</p>
+  <%= form.text_field :location, placeholder: "Location", class: "form-detail" %>
+  <p class="form-description">年収：</p>
+  <%= form.number_field :salary, placeholder: "Salary", class: "form-detail" %>
+  <p class="form-description">仕事内容：</p>
+  <%= form.text_area :description, placeholder: "Job description", rows: "15", class: "form-detail" %>
+  <%= form.submit "SEND", class: "submit-btn" %>
+  <div class="field">
+    <%= form.check_box :is_recruiter %>
+    <%= form.label :is_recruiter,'採用側である' %>
+  </div>
+
+
+
+
+
+
+

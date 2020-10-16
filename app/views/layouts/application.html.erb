@@ -11,6 +11,37 @@
   </head>
 
   <body>
+    <div class="header">
+    <div class="logo">
+      <h1><%= link_to 'GoodJob Website', root_path, method: :get, class: "logo" %></h1>
+    </div>
+    <div class="right-part">
+      <% if user_signed_in? %>
+        <div class="right-part-menu" id="my-page"><%= current_user.name %></div>
+        <% if user_signed_in? && current_user.is_recruiter? == true %>
+          <%= link_to "応募投稿", new_vacancy_path, class: "post", class: "right-part-menu" %>
+          <div class="right-part-menu" id="resume">応募者一覧</div>
+        <% elsif user_signed_in? && current_user.is_recruiter? == false %>
+        
+        <div class="right-part-menu" id="resume">My resume</div>
+        <div class="right-part-menu" id="list">Applied</div>
+        <div class="right-part-menu" id="bookmark">Bookmarks</div>
+        <% end %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "right-part-menu"%>
+      <% else %>
+        <%= link_to "Log in", new_user_session_path, class: "post", class: "right-part-menu" %>
+        <%= link_to "Sign up", new_user_registration_path, class: "post", class: "right-part-menu" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="body">
     <%= yield %>
+  </div>
+    
+
+    <div class="footer">
+    © 2020 Cafelatte.here 
+  </div>
   </body>
 </html>
